@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NBIL Journal Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NBIL Journal Club — School of Data Science">
+  <meta name="author" content="">
+  <!-- Le styles (keeping your Bootstrap 2.x includes) -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="css/theme.css" rel="stylesheet">
+  <style>
+    /* Simple calendar-like schedule cards */
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .cal-card {
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      padding: 14px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      background: #fff;
+    }
+    .cal-date {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .cal-dow {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #666;
+      margin-bottom: 8px;
+    }
+    .cal-time {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+    .cal-loc {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    .label-note {
+      display: inline-block;
+      padding: 2px 6px;
+      font-size: 12px;
+      border-radius: 4px;
+      background: #f5f5f5;
+      color: #555;
+    }
+    .hero-title {
+      margin-bottom: 6px;
+    }
+    .lead.tiny {
+      font-size: 16px;
+      color: #666;
+    }
+    .ics-box {
+      margin: 14px 0 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="jumbotron subhead" id="overview">
+      <p class="lead tiny">School of Data Science</p>
+      <h1 class="hero-title">NBIL Journal Club</h1>
+      <p class="lead">Mondays 12:30–1:30 PM (biweekly) • Room XXX</p>
+      <p class="ics-box">
+        <a class="btn btn-small btn-primary" href="nbil_journal_club_fall2025.ics">Add to Calendar (.ics)</a>
+      </p>
+    </header>
+
+    <div class="masthead">
+      <div class="navbar">
+        <div class="navbar-inner">
+                  <div class="container">
+                     <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li class="active"><a href="#">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="journalclub.html">Journal Club</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                     </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row-fluid">
+      <div class="span3 bs-docs-sidebar" id="navparent">
+        <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
+          <li><a href="#schedule"> 📅 Fall 2025 Schedule</a></li>
+          <li><a href="#papers"> 📚 Paper Lineup</a></li>
+          <li><a href="#people"> 👥 Organizers & Presenters</a></li>
+          <li><a href="#join"> ✍️ Sign Up</a></li>
+          <li><a href="#contact"> ✉️ Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="span8 offset1">
+        <!-- Schedule -->
+        <section id="schedule">
+          <div class="page-header">
+            <h3>Fall 2025 Schedule (Biweekly Mondays @ 12:30 PM)</h3>
+            <p class="muted">Start after Wed, Sep 3 → first Monday is <strong>Sep 8, 2025</strong>.</p>
+          </div>
+
+          <!-- Calendar-like grid -->
+          <div class="calendar-grid">
+            <!-- Sep -->
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Sep 8, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+              <span class="label-note">Kickoff</span>
+            </div>
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Sep 22, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+            </div>
+
+            <!-- Oct -->
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Oct 6, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+            </div>
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Oct 20, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+            </div>
+
+            <!-- Nov -->
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Nov 3, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+            </div>
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Nov 17, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+            </div>
+
+            <!-- Dec -->
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Dec 1, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+            </div>
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Dec 15, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+              <span class="label-note">Final Fall session</span>
+            </div>
+          </div>
+
+          <p class="muted" style="margin-top:10px;">
+            Note: Dec 29, 2025 falls in the biweekly pattern but is typically winter break, so it’s omitted.
+          </p>
+
+          <!-- Optional: tabular view for quick copy/paste -->
+          <table class="table table-striped" style="margin-top:10px;">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Location</th>
+                <th>Presenter / Paper</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Sep 8, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+              <tr><td>2</td><td>Sep 22, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+              <tr><td>3</td><td>Oct 6, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+              <tr><td>4</td><td>Oct 20, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+              <tr><td>5</td><td>Nov 3, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+              <tr><td>6</td><td>Nov 17, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+              <tr><td>7</td><td>Dec 1, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+              <tr><td>8</td><td>Dec 15, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Papers -->
+        <section id="papers">
+          <div class="page-header">
+            <h3>Paper Lineup</h3>
+            <p>We’ll post PDFs/links here. Typical format: 20–25 min overview + 20–25 min discussion.</p>
+            <ul>
+              <li>Session 1 (Sep 8): TBD</li>
+              <li>Session 2 (Sep 22): TBD</li>
+              <li>Session 3 (Oct 6): TBD</li>
+              <li>…</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- People -->
+        <section id="people">
+          <div class="page-header">
+            <h3>Organizers & Presenters</h3>
+            <p>List organizers and the presenter rotation here.</p>
+          </div>
+        </section>
+
+        <!-- Join -->
+        <section id="join">
+          <div class="page-header">
+            <h3>Join & Logistics</h3>
+            <p>Open to all interested students and researchers. Bring a laptop and questions.</p>
+            <p>
+              To propose a paper or volunteer to present, email:
+              <a href="mailto:your.email@uni.edu">your.email@uni.edu</a>.
+            </p>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+          <div class="page-header">
+            <h3>Contact</h3>
+            <p><b>When:</b> Mondays, 12:30–1:30 PM (biweekly)</p>
+            <p><b>Where:</b> School of Data Science (Room XXX)</p>
+            <p><b>Email:</b> <a href="mailto:your.email@uni.edu">your.email@uni.edu</a></p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span5">
+          <h3>Contact Information</h3>
+          <p><b>Hours: </b>Monday–Friday (8:00 AM–5:00 PM)</p>
+          <p><b>Phone: </b>999-999-9999</p>
+          <p><b>Cell: </b>999-999-9999</p>
+          <a href="mailto:your.email@uni.edu">Email</a>
+        </div>
+        <div class="span2">
+          <img src="thumbs/generic-logo.JPG" alt="lab-logo"/>
+        </div>
+        <div class="span5">
+          <h3>Address</h3>
+          <p>School of Data Science<br>
+             University of Virginia<br>
+             Charlottesville, VA<br>
+             United States
+          </p>
+          <a href="http://maps.google.com/">Show Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Le javascript
+  ================================================== -->
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(document.body).scrollspy({ target: "#navparent" });
+    });
+  </script>
+</body>
+</html>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>NBIL Journal Club</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="INSIGHT READING GROUP, Journal Club, School of Data Science, University of Virginia">
+  <meta name="description" content="NBIL Journal Club — School of Data Science">
   <meta name="author" content="">
   <!-- Le styles (keeping your Bootstrap 2.x includes) -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -69,7 +69,7 @@
   <div class="container">
     <header class="jumbotron subhead" id="overview">
       <p class="lead tiny">School of Data Science</p>
-      <h1 class="hero-title">INSIGHT READING GROUP</h1>
+      <h1 class="hero-title">NBIL Journal Club</h1>
       <p class="lead">Mondays 12:30–1:30 PM (biweekly) • Room XXX</p>
       <p class="ics-box">
         <a class="btn btn-small btn-primary" href="nbil_journal_club_fall2025.ics">Add to Calendar (.ics)</a>
@@ -84,7 +84,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="people.html">People</a></li>
                         <li><a href="research.html">Research</a></li>
-                        <!-- <li><a href="publications.html"> Publications</a></li> -->
+                        <li><a href="publications.html"> Publications</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="news.html">News</a></li>
                         <li class="active"><a href="#">Journal Club</a></li>
@@ -100,9 +100,11 @@
     <div class="row-fluid">
       <div class="span3 bs-docs-sidebar" id="navparent">
         <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
-          <li><a href="#people"> 👥 Organizers & Presenters</a></li>
           <li><a href="#schedule"> 📅 Fall 2025 Schedule</a></li>
+          <li><a href="#papers"> 📚 Paper Lineup</a></li>
+          <li><a href="#people"> 👥 Organizers & Presenters</a></li>
           <li><a href="#join"> ✍️ Sign Up</a></li>
+          <li><a href="#contact"> ✉️ Contact</a></li>
         </ul>
       </div>
 
@@ -111,20 +113,96 @@
         <section id="people">
           <div class="page-header">
             <h3>Organizers & Presenters</h3>
-            <p><strong>Hosted by:</strong> Dr. Aiying Zhang and Dr. Javier Rasero.</p>
-            <p><strong>Organized by:</strong> Weifeng (Ellery) Yu, and Ziqian Zhang.</p>
-            <p><strong>Presenters:</strong> Rotating among lab members and interested students.</p>
-
+            <p><strong>Organized by:</strong> Aiying Zhang, Weifeng (Ellery) Yu, and Ziqian Zhang.</p>
+            <p><em>This page was created by Ellery.</em></p>
           </div>
-
+          
         <!-- Schedule -->
         <section id="schedule">
-          <iframe 
-            src="https://docs.google.com/spreadsheets/d/1q16IgTm58qHC6cFqn3H32d0r09mFbvBZP_jEEfeE1wk/pubhtml?widget=true&amp;headers=false" 
-            width="100%" 
-            height="600" 
-            frameborder="0">
-          </iframe>
+          <div class="page-header">
+            <h3>Fall 2025 Schedule (Biweekly Mondays @ 12:30 PM)</h3>
+            <p class="muted">Start after Wed, Sep 3 → first Monday is <strong>Sep 22, 2025</strong>.</p>
+          </div>
+
+          <!-- Calendar-like grid -->
+          <div class="calendar-grid">
+            <!-- Sep -->
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Sep 22, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+            </div>
+
+            <!-- Oct -->
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Oct 6, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+            </div>
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Oct 20, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+            </div>
+
+            <!-- Nov -->
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Nov 3, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+            </div>
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Nov 17, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+            </div>
+
+            <!-- Dec -->
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Dec 1, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+            </div>
+            <div class="cal-card">
+              <div class="cal-dow">MONDAY</div>
+              <div class="cal-date">Dec 15, 2025</div>
+              <div class="cal-time">12:30–1:30 PM</div>
+              <div class="cal-loc">School of Data Science (Room XXX)</div>
+              <span class="label-note">Final Fall session</span>
+            </div>
+          </div>
+
+          <p class="muted" style="margin-top:10px;">
+            Note: Dec 29, 2025 falls in the biweekly pattern but is typically winter break, so it’s omitted.
+          </p>
+
+          <!-- Optional: tabular view for quick copy/paste -->
+          <table class="table table-striped" style="margin-top:10px;">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Location</th>
+                <th>Presenter / Paper</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Sep 22, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+              <tr><td>2</td><td>Oct 6, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+              <tr><td>3</td><td>Oct 20, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+              <tr><td>4</td><td>Nov 3, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+              <tr><td>5</td><td>Nov 17, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+              <tr><td>6</td><td>Dec 1, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+              <tr><td>7</td><td>Dec 15, 2025 (Mon)</td><td>12:30–1:30 PM</td><td>SDS (Room XXX)</td><td>—</td></tr>
+            </tbody>
+          </table>
         </section>
 
         <!-- Papers -->
@@ -139,6 +217,7 @@
             </ul>
           </div>
         </section>
+
 
 
           <h4>Presenter Rotation</h4>
@@ -156,11 +235,20 @@
             <p>Open to all interested students and researchers. Bring a laptop and questions.</p>
             <p>
               To propose a paper or volunteer to present, email:
-              <a href="mailto:dag9wj@virginia.edu">Ellery</a>.
+              <a href="mailto:xsa5db@virginia.edu">Aiying</a>.
             </p>
           </div>
         </section>
 
+        <!-- Contact -->
+        <section id="contact">
+          <div class="page-header">
+            <h3>Contact</h3>
+            <p><b>When:</b> Mondays, 12:30–1:30 PM (biweekly)</p>
+            <p><b>Where:</b> School of Data Science (Room XXX)</p>
+            <p><b>Email:</b> <a href="mailto:xsa5db@virginia.edu">Aiying</a></p>
+          </div>
+        </section>
       </div>
     </div>
   </div>

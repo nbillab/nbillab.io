@@ -111,11 +111,11 @@
             <p><strong>Organized by:</strong> Ellery Yu, and Ziqian Zhang.</p>
             <p>Our multidisciplinary journal club brings together students and researchers interested in brain networks, computational methods, imaging–genomics, and clinical applications.</p>
             <!-- insert a image here, which can be clicked and see large picture-->
-          <a href="images/BDS_INSIGHT.png" class="lightbox-single" title="BDS-INSIGHT Journal Club">
-            <img src="images/BDS_INSIGHT.png"
-                alt="BDS-INSIGHT Journal Club"
-                style="width:100%; max-width:600px; object-fit:contain; margin-top:10px; margin-bottom:10px;">
-          </a>
+            <a href="images/BDS_INSIGHT.png" class="lightbox-single" title="BDS-INSIGHT Journal Club">
+              <img src="images/BDS_INSIGHT.png"
+                  alt="BDS-INSIGHT Journal Club"
+                  style="width:100%; max-width:600px; object-fit:contain; margin-top:10px; margin-bottom:10px;">
+            </a>
 
 
           </div>
@@ -173,12 +173,37 @@
 
   <!-- Le javascript
   ================================================== -->
-  <script src="js/jquery-1.9.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $(document.body).scrollspy({ target: "#navparent" });
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/blueimp-gallery.min.js"></script>
+
+<script>
+  // Bootstrap scrollspy（可留可删）
+  jQuery(function($){
+    $(document.body).scrollspy({ target: "#navparent" });
+  });
+
+  // 等 DOM 就绪后再绑定 lightbox
+  document.addEventListener('DOMContentLoaded', function () {
+    var links = document.querySelectorAll('a.lightbox-single');
+    if (!links.length) return; // 没有匹配元素就直接返回
+
+    Array.prototype.forEach.call(links, function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        blueimp.Gallery(
+          [{ href: link.href, title: link.getAttribute('title') || '' }],
+          {
+            container: '#blueimp-gallery',
+            closeOnSlideClick: true,
+            closeOnSwipeUpOrDown: true,
+            toggleControlsOnSlideClick: true,
+            stretchImages: true
+          }
+        );
+      });
     });
-  </script>
+  });
+</script>
 </body>
 </html>

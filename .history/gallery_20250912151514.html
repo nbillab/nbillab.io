@@ -198,7 +198,7 @@
             <div class="row-fluid">
               <ul class="thumbnails da-thumbs">
                 <li class="span4 thumb-grid">
-                  <a title="Kurt, SPIE25" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13411/3047102/Leverage-multi-modal-neuro-imaging-and-genetics-to-identify-causal/10.1117/12.3047102.full" class="thumbnail">
+                  <a title="Kurt, SPIE25" href="images/lab_presentation/img_03.jpg" class="thumbnail">
                     <img alt="Kurt, SPIE25" src="images/lab_presentation/img_03.jpg">
                     <br> Kurt, SPIE25, San Diego, CA.
                   </a>
@@ -210,7 +210,7 @@
                   </a>
                 </li>
                 <li class="span4 thumb-grid">
-                  <a title="Kurt, 2024 Brain Symposium" href="https://news.med.virginia.edu/featured/2024-uva-brain-symposium-hosts-over-300-neuroscience-researchers/" class="thumbnail">
+                  <a title="Kurt, 2024 Brain Symposium" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13411/3047102/Leverage-multi-modal-neuro-imaging-and-genetics-to-identify-causal/10.1117/12.3047102.full" class="thumbnail">
                     <img alt="Presentation 01" src="images/lab_presentation/img_01.jpg">
                     <br>Kurt, 2024 Brain Symposium, Charlottesville, VA.
                   </a>
@@ -302,28 +302,6 @@
         blueimp.Gallery(links, { index: a, event: e });
       });
     });
-    </script>
-
-    <script>
-      (function () {
-  var root = document.getElementById('imagegallery2');
-  if (!root) return;
-
-  // 可选：让这里的链接在新标签打开
-  root.querySelectorAll('a[href]').forEach(function (a) {
-    a.setAttribute('target','_blank');
-    a.setAttribute('rel','noopener');
-  });
-
-  // 仅对 #imagegallery2 关闭灯箱：不阻止默认跳转，只阻止其它点击处理器
-  root.addEventListener('click', function (e) {
-    var a = e.target.closest('#imagegallery2 a');
-    if (!a) return;
-    // 不要 e.preventDefault() —— 让浏览器正常跳转
-    e.stopPropagation();
-    e.stopImmediatePropagation();
-  }, true); // 用捕获阶段，抢在灯箱脚本之前执行
-})();
     </script>
 
   </body>

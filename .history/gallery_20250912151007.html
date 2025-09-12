@@ -174,19 +174,19 @@
             <div class="row-fluid">
               <ul class="thumbnails da-thumbs">
                 <li class="span4 thumb-grid">
-                  <a title="Ellery, MIDL25" href="https://2025.midl.io/" class="thumbnail">
+                  <a title="Ellery, MIDL25" href="images/lab_presentation/img_09.jpg" class="thumbnail">
                     <img alt="Ellery, MIDL25" src="images/lab_presentation/img_09.jpg">
                     <br>Ellery, MIDL25, Salt Lake City, UT.
                   </a>
                 </li>
                 <li class="span4 thumb-grid">
-                  <a title="Ellery, 2025 Brain Retreat" href="https://braininstitute.virginia.edu/2025-uva-brain-retreat" class="thumbnail">
+                  <a title="Ellery, 2025 Brain Retreat" href="images/lab_presentation/img_08.jpg" class="thumbnail">
                     <img alt="Ellery, 2025 Brain Retreat" src="images/lab_presentation/img_08.jpg">
                     <br> Ellery, 2025 Brain Retreat, Charlottesville, VA.
                   </a>
                 </li>
                 <li class="span4 thumb-grid">
-                  <a title="Xin He, 2025 Brain Retreat" href="https://braininstitute.virginia.edu/2025-uva-brain-retreat" class="thumbnail">
+                  <a title="Xin He, 2025 Brain Retreat" href="images/lab_presentation/img_07.jpg" class="thumbnail">
                     <img alt="Xin He, 2025 Brain Retreat" src="images/lab_presentation/img_07.jpg">
                     <br> Xin He, 2025 Brain Retreat, Charlottesville, VA.
                   </a>
@@ -198,19 +198,19 @@
             <div class="row-fluid">
               <ul class="thumbnails da-thumbs">
                 <li class="span4 thumb-grid">
-                  <a title="Kurt, SPIE25" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13411/3047102/Leverage-multi-modal-neuro-imaging-and-genetics-to-identify-causal/10.1117/12.3047102.full" class="thumbnail">
+                  <a title="Kurt, SPIE25" href="images/lab_presentation/img_03.jpg" class="thumbnail">
                     <img alt="Kurt, SPIE25" src="images/lab_presentation/img_03.jpg">
                     <br> Kurt, SPIE25, San Diego, CA.
                   </a>
                 </li>
                 <li class="span4 thumb-grid">
-                  <a title="Aroosha, SPIE25" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13410/3047311/Altered-hierarchical-rank-in-intrinsic-neural-time-scales-in-autism/10.1117/12.3047311.full" class="thumbnail">
+                  <a title="Aroosha, SPIE25" href="images/lab_presentation/img_02.jpg" class="thumbnail">
                     <img alt="Aroosha, SPIE25" src="images/lab_presentation/img_02.jpg">
                     <br> Aroosha, SPIE25, San Diego, CA.
                   </a>
                 </li>
                 <li class="span4 thumb-grid">
-                  <a title="Kurt, 2024 Brain Symposium" href="https://news.med.virginia.edu/featured/2024-uva-brain-symposium-hosts-over-300-neuroscience-researchers/" class="thumbnail">
+                  <a title="Kurt, 2024 Brain Symposium" href="images/lab_presentation/img_01.jpg" class="thumbnail">
                     <img alt="Presentation 01" src="images/lab_presentation/img_01.jpg">
                     <br>Kurt, 2024 Brain Symposium, Charlottesville, VA.
                   </a>
@@ -218,7 +218,7 @@
               </ul>
             </div>
           </section>
-
+          
         </div>
       </div>
     </div>
@@ -302,28 +302,6 @@
         blueimp.Gallery(links, { index: a, event: e });
       });
     });
-    </script>
-
-    <script>
-      (function () {
-  var root = document.getElementById('imagegallery2');
-  if (!root) return;
-
-  // 可选：让这里的链接在新标签打开
-  root.querySelectorAll('a[href]').forEach(function (a) {
-    a.setAttribute('target','_blank');
-    a.setAttribute('rel','noopener');
-  });
-
-  // 仅对 #imagegallery2 关闭灯箱：不阻止默认跳转，只阻止其它点击处理器
-  root.addEventListener('click', function (e) {
-    var a = e.target.closest('#imagegallery2 a');
-    if (!a) return;
-    // 不要 e.preventDefault() —— 让浏览器正常跳转
-    e.stopPropagation();
-    e.stopImmediatePropagation();
-  }, true); // 用捕获阶段，抢在灯箱脚本之前执行
-})();
     </script>
 
   </body>
